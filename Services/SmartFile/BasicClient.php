@@ -1,4 +1,4 @@
-<?php
+<?php namespace Gfever\SmartFile;
 /**
  * SmartFile PHP SDK
  *
@@ -37,7 +37,7 @@
  * @since     File available since Release 2.1
  */
 
-require_once 'Client.php';
+
 
 /**
  *  Basic Authentication API client, handles communication, retry, versioning etc.
@@ -49,7 +49,7 @@ require_once 'Client.php';
  * @license   See LICENSE file
  * @link      http://pear.php.net/package/SmartFile
  */
-Class Service_SmartFile_BasicClient extends Service_SmartFile_Client
+Class BasicClient extends Client
 {
 
     // {{{ private properties
@@ -77,7 +77,7 @@ Class Service_SmartFile_BasicClient extends Service_SmartFile_Client
      *
      * @return null
      */
-    function __construct($key, $pass)
+    public function __construct($key, $pass)
     {
         $this->_api_key = $key;
         $this->_api_pwd = $pass;

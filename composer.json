@@ -4,8 +4,8 @@
   "description": "smartfile sdk",
   "license": "GPL-v2",
   "autoload": {
-    "psr-0": {
-      "Gfever\\SmartFile": "Services/SmartFile"
+    "psr-4": {
+      "Gfever\\": "Services"
     }
   }
 }

@@ -1,4 +1,4 @@
-<?php
+<?php namespace Gfever\SmartFile;;
 /**
  * SmartFile PHP SDK
  *
@@ -37,7 +37,6 @@
  * @since     File available since Release 2.1
  */
 
-require_once 'Exception.php';
 
 /**
  *  Base API client, handles communication, retry, versioning etc.
@@ -49,7 +48,7 @@ require_once 'Exception.php';
  * @license   See LICENSE file
  * @link      http://pear.php.net/package/SmartFile
  */
-class Service_SmartFile_Client
+class Client
 {
 
     // {{{ public properties

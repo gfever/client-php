@@ -1,5 +1,5 @@
 
-<?php
+<?php namespace Gfever\SmartFile;;
 /**
  * SmartFile PHP SDK
  *
@@ -38,8 +38,6 @@
  * @since     File available since Release 2.1
  */
 
-require_once 'Client.php';
-
 /**
  *  API client that uses OAuth tokens. Layers a more complex form of
  *  authentication useful for 3rd party access on top of the base Client.
@@ -51,7 +49,7 @@ require_once 'Client.php';
  * @license   See LICENSE file
  * @link      http://pear.php.net/package/SmartFile
  */
-Class Service_SmartFile_OAuthClient extends Service_SmartFile_Client
+Class OAuthClient extends Client
 {
     // {{{ public properties
 

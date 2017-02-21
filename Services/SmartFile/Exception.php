@@ -1,4 +1,4 @@
-<?php
+<?php namespace Gfever\SmartFile;;
 /**
  * SmartFile PHP SDK
  *
@@ -47,7 +47,7 @@
  * @license   See LICENSE file
  * @link      http://pear.php.net/package/SmartFile
  */
-class Service_SmartFile_APIException extends Exception
+class APIException extends Exception
 {
 }
 
@@ -61,7 +61,7 @@ class Service_SmartFile_APIException extends Exception
  * @license   See LICENSE file
  * @link      http://pear.php.net/package/SmartFile
  */
-class Service_SmartFile_RequestException extends Service_SmartFile_APIException
+class RequestException extends APIException
 {
 }
 
@@ -75,7 +75,7 @@ class Service_SmartFile_RequestException extends Service_SmartFile_APIException
  * @license   See LICENSE file
  * @link      http://pear.php.net/package/SmartFile
  */
-class Service_SmartFile_ResponseException extends Service_SmartFile_APIException
+class ResponseException extends APIException
 {
 
     /** Parse response to add more info about the exception
