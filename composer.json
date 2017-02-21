@@ -1,19 +1,21 @@
-"repositories": [
+{
+  "repositories": [
     {
-        "type": "package",
-        "package": {
-            "name": "gfever/smartfile",
-            "version": "dev-master",
-            "source": {
-                "url": "git://github.com/gfever/client-php.git",
-                "type": "git",
-                "reference": "master"
-            },
-            "autoload": {
-                "psr-0" : {
-                    "Gfever\\SmartFile" : "Services/SmartFile"
-                }
-            }
+      "type": "package",
+      "package": {
+        "name": "gfever/smartfile",
+        "version": "dev-master",
+        "source": {
+          "url": "git://github.com/gfever/client-php.git",
+          "type": "git",
+          "reference": "master"
+        },
+        "autoload": {
+          "psr-0": {
+            "Gfever\\SmartFile": "Services/SmartFile"
+          }
         }
+      }
     }
-]
+  ]
+}
